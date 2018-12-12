@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <title>My experimental work with bootstrap</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get  grouped for better mobile display-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><b><i>Ayfab International</i></b></a>
+                </div>
+                <!-- collect nav links,form nd other content for toggling-->
+                <div class="collapse navbar-collapse" id="navbar_collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Ayotunde</a></li>
+                        <li><a href="#">Fabari</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Daddy</a></li>
+                                <li><a href="#">Mummy</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Oluwaseun</a></li>
+                                <li><a href="#">Opeyemi</a></li>
+                                <li><a href="#">Ayotunde</a></li>
+                                <li><a href="#">Olaoluwa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="form">
+                        <div class="form-group">
+                            <b><i>Login info</i></b>: <input type="text" class="form-control" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">login</button>
+                    </form> 
+                </div>
+            </div>
+        </nav>
+        <div class='container'>
+            <div class='jumbotron'>
+                <h2 align = "center">My experimental work with bootstrap functionality</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!--Carousel-->
+                    <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- indicators - where we are in the cycle-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#my-carousel" data-slide-to="1"></li>
+                            <li data-target="#my-carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- list of images -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <!-- image to display -->
+                                <img alt="odunsi odunayo" src="odunayo.png" width="1200">
+                                <!--caption for the image-->
+                                <div class="carousel-caption">
+                                    <p align="center">odunayo my good friend</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- image to display -->
+                                <img alt="humble me" src="humble_me.jpg" width="1200">
+                                <!--caption for the image-->
+                                <div class="carousel-caption">
+                                    <p align="center">My very humble self</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- image to display -->
+                                <img alt="Fabari" src="mene_fabari.png" width="1200">
+                                <!--caption for the image-->
+                                <div class="carousel-caption">
+                                    <p align="center">My very humble self</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <a class="left-carousel-control" href="#my-carousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right-carousel-control" href="#my-carousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2"><h3>My Daddy</h3>He works at Dangote plc as an accountant,he is from a family of seven and he happens to be the third child born on 23rd March.</div>
+                <div class="col-md-4 "><h3>My Mummy</h3>She is a trader and a business woman,sell cement drinks and provision in general.She is from a family of six(6) and she happens to be the first child born on 21st April.</div>
+            </div>
+            <div class='row'>
+                <div class="col-xs-12 col-md-6 col-md-push-6"><h4><b>Very important things about me</b></h4>Am a final year student of <b>FUNAAB</b> from the mechanical Engineering department,a pianist and of course am an upcoming developer in the world of information technology</div>
+                <div class="col-xs-12 col-md-6 col-md-pull-6"><h4><em>Less important things about me</em></h4>I just finished my Industrail training at federal airport authority of nigeria in ikeja.Am in my early twenties,the third child born on 1st january...just to mention but a few</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class=" col-xs-12 col-md-6">
+                    <h3>Tabs</h3>
+                    <!--tabs-->
+                     <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#daddy" role="tab" data-toggle="tab">Daddy</a></li>
+                        <li><a href="#mummy" role="tab" data-toggle="tab">Mummy</a></li>
+                        <li><a href="#Very_important" role="tab" data-toggle="tab">Import</a></li>
+                        <li><a href="#Less_important" role="tab" data-toggle="tab">Less import</a></li>
+                    </ul>
+
+                    <!--Tab content-->
+                    <div class="tab-content">
+                        <div class="active tab-pane fade in" id="daddy">
+                            <h3>My Daddy</h3>
+                            He works at Dangote plc as an accountant,he is from a family of seven and he happens to be the third child born on 23rd March.
+                        </div>
+                        <div class="tab-pane fade in" id="mummy">
+                            <h3>My Mummy</h3>
+                            She is a trader and a business woman,sell cement drinks and provision in general.She is from a family of six(6) and she happens to be the first child born on 21st April.
+                        </div>
+                        <div class="tab-pane fade in" id="Very_important">
+                            <h4><b>Very important things about me</b></h4>
+                            Am a final year student of <b>FUNAAB</b> from the mechanical Engineering department,a pianist and of course am an upcoming developer in the world of information technology
+                        </div>
+                        <div class="tab-pane fade in" id="Less_important">
+                                <h4><em>Less important things about me</em></h4>
+                                I just finished my Industrail training at federal airport authority of nigeria in ikeja.Am in my early twenties,the third child born on 1st january...just to mention but a few
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <h2>Scrollspy</h2>
+                    <div style="position:relative;">
+                        <!--Navigation-->
+                        <nav class="navbar navbar-default navbar-static" role="navigation" id="navbar-spy">
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#Daddy">Daddy</a></li>
+                                    <li><a href="#Mummy">Mummy</a></li>
+                                    <li><a href="#very_important">Import</a></li>
+                                    <li><a href="#less_important">Less import</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <!--content-->
+                        <div data-target="#navbar-spy" data-spy="scroll" style="height:150px; overflow-y:scroll; position:relative">
+                            <div id="Daddy">
+                                <h3>My Daddy</h3>
+                                He works at Dangote plc as an accountant,he is from a family of seven and he happens to be the third child born on 23rd March.        
+                            </div>
+                            <div id="Mummy">
+                                <h3>My Mummy</h3>
+                                She is a trader and a business woman,sell cement drinks and provision in general.She is from a family of six(6) and she happens to be the first child born on 21st April.        
+                            </div>
+                            <div id="very_important">
+                                <h4><b>Very important things about me</b></h4>
+                                Am a final year student of <b>FUNAAB</b> from the mechanical Engineering department,a pianist and of course am an upcoming developer in the world of information technology
+                            </div>
+                            <div id="less_important">
+                                <h4><em>Less important things about me</em></h4>
+                                I just finished my Industrail training at federal airport authority of nigeria in ikeja.Am in my early twenties,the third child born on 1st january...just to mention but a few
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Accordion-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="panel-group" id="collapse_1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#collapse_1" href="#collapse-one">
+                                        Somoye Oluwaseun
+                                    </a> 
+                                </h4>
+                            </div>
+                            <div id="collapse-one" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                Running a PHD programme at cardiff university
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 div class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#collapse_1" href="#collapse-two">
+                                            Somoye Opeyemi
+                                        </a> 
+                                    </h4>
+                                </div>
+                                <div id="collapse-two" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Presently work at first bank in benue state 
+                                    </div>
+                                </div>
+                         
+                        </div>
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 div class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#collapse_1" href="#collapse-three">
+                                            Somoye Ayotunde
+                                        </a> 
+                                    </h4>
+                                </div>
+                                <div id="collapse-three" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        An engineer and also an upcoming developer
+                                    </div>
+                                </div>
+                         
+                        </div>
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 div class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#collapse_1" href="#collapse-four">
+                                            Somoye Olaoluwa
+                                        </a> 
+                                    </h4>
+                                </div>
+                                <div id="collapse-four" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Presently running a diploma programme at olabisi onabanjo university
+                                    </div>
+                                </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--controlling visibility
+            options=
+            hidden=visible by default
+            visible=hidden by default
+        
+            modes=
+            screen size
+            print-->
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModal=label">Register</h4>
+                        </div>
+                        <div class="modal-body">
+                                <form action="" role="form" class="form-horizontal">
+                                        <div class="form-group has-feedback">
+                                            <label for="email" class="control-label col-md-3">email</label>
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control" required="required" name="email" id="email" placeholder="email">
+                                                <span class="glyphicon form-control-feedback"></span>
+                                            </div>
+                                        </div>
+                     
+                                        <div class="form-group has-feedback">
+                                            <label for="twitter" class="control-label col-md-3">Twitter</label>
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">@</span>
+                                                    <input type="text" class="form-control" required="required" name="twitter" id="twitter" placeholder="twitter">
+                                                </div>
+                                                <span class="glyphicon form-control-feedback"></span>
+                                            </div>
+                                        </div>
+                                     </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary" id="save">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                    <!-- Alert -->
+                    <div class="alert alert-success hidden" id="success-alert">
+                        <h2>Saved Data</h2>
+                        <div>Your information has been submitted</div>
+                    </div>
+            </div>
+
+            <div class="container">
+                <!--Modal launcher -->
+                <div class="row">
+                    <button type="button" class="col-md-offset-3 col-md-6 btn btn-success" data-toggle="modal" data-target="#myModal">Launch Modal!</button>
+                </div>
+            </div>
+            
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            $(function () {
+                $('#save').click(function () {
+                    var formValid = true;
+
+                    //loop tru every input control
+                    $('input').each(function () {
+                        
+                        //find the form group to set our error/success
+                        var formGroup = $(this).parents('.form-group');
+
+                        //find the glyphicon to show our check or x
+                        var glyphicon = formGroup.find('.glyphicon');
+
+                        //use the html5 formvalidity function
+                        if (this.checkValidity()) {
+                            //show green,remove red
+                            formGroup.addClass('has-success').removeClass('has-error');
+                            //show check, remove x
+                            glyphicon.addClass('glyphicon-ok').removeClass('glyphicon-remove');
+                        } else {
+                            //show red,remove green
+                            formGroup.addClass('has-error').removeClass('has-success');
+                            //show x, remove check
+                            glyphicon.addClass('glyphicon-remove').removeClass('glyphicon-ok');
+                            //mark form as invalid
+                            formValid = false;
+                        }
+                    });
+                    if (formValid) {
+                        //hide modal dialog
+                        $('#myModal').modal('hide');
+                        //show alert
+                        $('#success-alert').removeClass('hidden');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
